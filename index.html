@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metadata -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Scripts, stylesheets & fontawesome -->
+       <script
+            src="https://kit.fontawesome.com/697f19f30c.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="index.js" defer></script>
+        <link rel="stylesheet" href="./css/styles.css" />
+         
+        <!-- Page title -->
+        <title>сrypto</title>
+        <link rel="stylesheet" href="https://cdn.cryptofonts.com/1.3.5/cryptofont.css">
+    </head>
+
+    <body>
+        <script src = "app.js"></script> </script>
+        <!-- Header -->
+        <header class="header">
+            <p>crypto</p>
+            <p></p>
+        </header>
+
+        <!-- Main -->
+        <main class="main">
+            <!-- Main Title -->
+            <p class="main__title">Текущий курс обмена криптовалюты:</p>
+            <!-- Main Exchange -->
+            <div class="main__exchange">
+                <select id="select-crypto" onchange="getSelectedCryptoValue();">
+                    <option value="BTC">BTC</option>
+                    <option value="ETH">ETH</option>
+                    <option value="ADA">ADA</option>
+                    <option value="DOGE">DOG</option>
+                    <option value="XRP">XRP</option>
+                    <option value="DOT">DOT</option>
+                    <option value="BNB">BNB</option>
+                </select>
+                <img src="./assets/exchange-icon.svg" alt="to" />
+                <select id="select-fiat" onchange="getSelectedFiatValue();">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="RUB">RUB</option>
+                </select>
+            </div>
+            <!-- Main Result -->
+            <div class="main__result">
+                <p>
+                    <span class="main__text-accent"
+                        ><span id="result-crypto">BTC</span> =</span
+                    >
+                    <span id="result-value">Loading...</span>
+                    <span class="main__text-accent" id="result-fiat">USD</span>
+                </p>
+            </div>
+        </main>
+        <H1>узнай больше о крипте</H1>
+        <div class="info">
+            
+            <a href="https://coinmarketcap.com/ru/currencies/bitcoin/" class="links">
+                <i class="cf cf-btc"></i>
+            <p> BTC </p>
+            </a>
+            <a href="https://coinmarketcap.com/ru/currencies/ethereum/" class="links">
+                <i class="cf cf-eth"></i>
+              <P>ETH</P>  
+            </a>
+            <a href="https://coinmarketcap.com/ru/currencies/cardano/" class="links">
+            <i class="cf cf-ada"></i>
+             <p>ADA</p>
+            </a>
+            <a href="https://coinmarketcap.com/ru/currencies/dogecoin/" class="links">
+            <i class="cf cf-doge"></i>
+            <p>DOGE</p>
+        </a>
+            <a href="https://coinmarketcap.com/ru/currencies/xrp/" class="links">
+            <i class="cf cf-xrp"></i>
+            <p>XRP</p>
+        </a>
+            <a href="https://coinmarketcap.com/ru/currencies/polkadot-new/" class="links">
+            <i class="cf cf-dot"></i>
+            <p>DOT</p>
+        </a>
+            <a href="https://coinmarketcap.com/ru/currencies/bnb/" class="links">
+            <i class="cf cf-bnb"></i>
+            <P>BNB</P>
+        </a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            </p>
+        </footer>
+    </body>
+</html>
